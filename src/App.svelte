@@ -1,15 +1,10 @@
 <script>
 	import {
-		Button,
-		InputGroup,
-		InputGroupAddon,
-		Input,
-	} from 'sveltestrap';
-	import {
 		onMount
 	} from "svelte";
 
-	let fileinput, imageSrc = 'doge.jpg', canvasPadding, size;
+	let fileinput, imageSrc = 'doge.jpg',
+		canvasPadding, size;
 	let gradient = ",white 50%, red 50%"
 
 	onMount(() => {
@@ -41,10 +36,8 @@
 				colors.push(hex)
 			}
 			colors.forEach(function(value, i) {
-				gradient = gradient + "," + value + " " + Math.round(100 * i / colors.length) + "% " + Math.round(100 * (i + 1) / colors.length) +"%";
-				console.log('%d: %s', i, value);
+				gradient = gradient + "," + value + " " + Math.round(100 * i / colors.length) + "% " + Math.round(100 * (i + 1) / colors.length) + "%";
 			});
-			console.log(gradient)
 		});
 	}
 </script>
@@ -73,15 +66,15 @@
 		font-size: 16px;
 		text-align: center;
 		display: block;
-		color: rgba(0,0,0,0.8);
-		text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-								 0px -5px 35px rgba(255,255,255,0.3);
+		color: rgba(0, 0, 0, 0.8);
+		text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+			0px -5px 35px rgba(255, 255, 255, 0.3);
 	}
 
 	:global(body) {
 		margin: 0;
 		background-color: #f8f8f8;
-background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23e7e4eb' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+		background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23e7e4eb' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 	}
 </style>
 
