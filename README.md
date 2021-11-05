@@ -1,7 +1,7 @@
 # make-a-flag
 [DEMO HERE](https://make-a-flag.netlify.app)
 
-![](https://github.com/ganochenkodg/make-a-flag/blob/main/screenshot.gif)
+![](https://github.com/ganochenkodg/make-a-flag/blob/master/screenshot.gif)
 
 ### description
 Generate flag from chosen picture's palette
