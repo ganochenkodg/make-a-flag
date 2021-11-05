@@ -4,8 +4,7 @@
 	} from "svelte";
 
 	let fileinput, imageSrc = 'doge.jpg',
-		canvasPadding, size;
-	let gradient = ",white 50%, red 50%"
+		canvasPadding, size, gradient;
 
 	onMount(() => {
 		canvasPadding = 200;
