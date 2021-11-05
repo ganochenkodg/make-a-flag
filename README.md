@@ -1,10 +1,10 @@
-# hypnotic squares
-[DEMO HERE](https://hypnotic-squares.netlify.app)
+# make-a-flag
+[DEMO HERE](https://make-a-flag.netlify.app)
 
-![](https://github.com/ganochenkodg/hypnotic-squares/blob/main/screenshot.gif)
+![](https://github.com/ganochenkodg/make-a-flag/blob/main/screenshot.gif)
 
 ### description
-Endless generative animation drawing colorful squares.
+Generate flag from chosen picture's palette
 
 ### usage
 
@@ -18,6 +18,6 @@ npm install && npm run dev
 3. Also it have Dockerfile for dockerize your app.
 
 ```
-docker build -t squares ./
-docker run -p 80:80 squares
+docker build -t flag ./
+docker run -p 80:80 flag
 ```
