@@ -19,5 +19,5 @@ npm install && npm run dev
 
 ```
 docker build -t flag ./
-docker run -p 80:80 flag
+docker run -p 80:8080 flag
 ```
